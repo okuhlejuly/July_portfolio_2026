@@ -1,0 +1,7 @@
+.sf/
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+.env.local
+node_modules/
