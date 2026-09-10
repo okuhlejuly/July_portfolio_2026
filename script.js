@@ -55,10 +55,10 @@ const PROJECTS = [
 ];
 
 const BADGES = [
-  { name: "Admin Beginner", points: 1200, locked: false },
-  { name: "Salesforce Platform Basics", points: 800, locked: false },
-  { name: "Data Management", points: 1000, locked: false },
-  { name: "Reports & Dashboards", points: 900, locked: false },
+  { name: "Admin Beginner", points: 1200, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.27.59%20%281%29.jpeg" },
+  { name: "Salesforce Platform Basics", points: 800, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.27.59.jpeg" },
+  { name: "Data Management", points: 1000, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.28.00.jpeg" },
+  { name: "Reports & Dashboards", points: 900, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.28.01.jpeg" },
   { name: "Flow Builder Basics", points: 1100, locked: false },
   { name: "Security Basics", points: 700, locked: false },
   { name: "App Customization", points: 600, locked: false },
@@ -109,7 +109,7 @@ function renderBadges() {
 
   grid.innerHTML = BADGES.map((b) => `
     <div class="badge-card${b.locked ? " is-locked" : ""}">
-      <div class="badge-icon">${BADGE_ICON}</div>
+      <div class="badge-icon">${b.image ? `<img src="${b.image}" alt="${b.name} badge">` : BADGE_ICON}</div>
       <h4>${b.name}</h4>
       <span class="badge-points">${b.points.toLocaleString()} pts</span>
     </div>
