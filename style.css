@@ -258,11 +258,11 @@ button { font-family: inherit; cursor: pointer; }
   border: 2px solid var(--green);
   border-radius: var(--radius-md);
   background: #eef2f6;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 10px;
+  overflow: hidden;
   color: #94a3b8;
   font-size: 0.9rem;
 }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -463,7 +463,7 @@ button { font-family: inherit; cursor: pointer; }
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .contact-list small { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
-.contact-list strong { font-size: 0.95rem; color: var(--navy); font-weight: 600; }
+.contact-list strong { font-size: 0.95rem; color: var(--navy); font-weight: 600; overflow-wrap: anywhere; }
 .opportunities { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--line); }
 .opportunities > p { font-weight: 600; color: var(--navy); margin-bottom: 12px; }
 .check-list { display: flex; flex-direction: column; gap: 10px; }
@@ -590,5 +590,8 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @media (max-width: 420px) {
+  .project-grid { grid-template-columns: 1fr; }
   .badge-grid { grid-template-columns: repeat(2, 1fr); }
+  .cv-card-footer { gap: 12px; flex-wrap: wrap; }
+  .btn { white-space: normal; text-align: center; }
 }
