@@ -351,6 +351,7 @@ button { font-family: inherit; cursor: pointer; }
 .cert-meta { font-size: 0.88rem; margin-bottom: 4px; }
 .cert-id { font-size: 0.85rem; margin-bottom: 22px; }
 .cert-id strong { color: var(--navy); }
+.cert-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .cert-list { display: flex; flex-direction: column; gap: 18px; }
 .cert-row {
