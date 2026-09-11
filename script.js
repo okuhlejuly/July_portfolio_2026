@@ -20,7 +20,7 @@ const PROJECTS = [
     flow: ["Application", "Screening", "Bootcamp Booking", "Attendance", "Trainee", "Contract"],
     tech: ["Custom Objects", "Process Automation", "Google Apps Script", "Salesforce REST API", "Apex Classes", "Document Generation"],
     techMore: 3,
-    link: "#"
+    link: "https://docs.google.com/document/d/1-VeJ5suAe6pDcsUqFheT923fU8KC-aplGWU7bAXpf7k/edit?usp=drivesdk"
   }
 ];
 
