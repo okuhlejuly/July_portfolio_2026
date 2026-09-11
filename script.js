@@ -14,51 +14,21 @@ const PROJECTS = [
   },
   {
     accent: "#10b981",
-    tags: ["Salesforce", "Applicant Management", "CRM"],
-    title: "Life Choices Academy Applicant Management",
-    description: "Designed a Salesforce-based applicant journey for managing applications, screening, bootcamp selection and trainee progression.",
-    flow: ["Application", "Applicant", "Screening", "Shortlisted", "Bootcamp", "Trainee"],
-    tech: ["Applicant Management", "Data Management", "Process Automation", "Bootcamp Management"],
-    techMore: 1,
-    link: "#"
-  },
-  {
-    accent: "#7c3aed",
-    tags: ["Salesforce", "Google Apps Script", "REST API"],
-    title: "Student Attendance System",
-    description: "Built an attendance solution connecting a web-based student check-in system with Salesforce using Google Apps Script and the Salesforce REST API.",
-    flow: ["Student Web Check-In", "Location Verification", "Google Apps Script", "Salesforce REST API"],
-    tech: ["Salesforce REST API", "Google Apps Script", "OAuth Authentication", "Location Verification"],
-    techMore: 2,
-    link: "#"
-  },
-  {
-    accent: "#f97316",
-    tags: ["Salesforce", "Apex", "PDF Generation"],
-    title: "Trainee Management & Contract System",
-    description: "Designed a trainee management solution connecting students, trainees, contracts and programme information inside Salesforce.",
-    flow: ["Student", "Trainee", "Contract", "Programme", "Attendance"],
-    tech: ["Custom Objects", "Apex Classes", "Document Generation", "Salesforce Files"],
-    techMore: 1,
-    link: "#"
-  },
-  {
-    accent: "#06b6d4",
-    tags: ["Salesforce", "Google Forms", "Apps Script"],
-    title: "Bootcamp Booking System",
-    description: "Building a bootcamp booking solution that allows applicants to select available bootcamp slots and automatically creates booking information in Salesforce.",
-    flow: ["Applicant", "Available Bootcamp Slots", "Google Form", "Google Sheets"],
-    tech: ["Booking Management", "Google Forms", "Google Apps Script", "Salesforce REST API"],
-    techMore: 1,
+    tags: ["Salesforce", "Applicant & Trainee Management", "Automation", "Integrations"],
+    title: "Life Choices Academy Salesforce Management Platform",
+    description: "Designed an end-to-end Salesforce platform for applicant management, bootcamp bookings, attendance tracking, trainee progression and contract generation, with Google tools and REST API integrations.",
+    flow: ["Application", "Screening", "Bootcamp Booking", "Attendance", "Trainee", "Contract"],
+    tech: ["Custom Objects", "Process Automation", "Google Apps Script", "Salesforce REST API", "Apex Classes", "Document Generation"],
+    techMore: 3,
     link: "#"
   }
 ];
 
 const BADGES = [
-  { name: "Admin Beginner", points: 1200, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.27.59%20%281%29.jpeg" },
-  { name: "Salesforce Platform Basics", points: 800, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.27.59.jpeg" },
-  { name: "Data Management", points: 1000, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.28.00.jpeg" },
-  { name: "Reports & Dashboards", points: 900, locked: false, image: "assets/WhatsApp%20Image%202026-09-10%20at%2016.28.01.jpeg" },
+  { name: "Admin Beginner", points: 1200, locked: false },
+  { name: "Salesforce Platform Basics", points: 800, locked: false },
+  { name: "Data Management", points: 1000, locked: false },
+  { name: "Reports & Dashboards", points: 900, locked: false },
   { name: "Flow Builder Basics", points: 1100, locked: false },
   { name: "Security Basics", points: 700, locked: false },
   { name: "App Customization", points: 600, locked: false },
@@ -109,7 +79,7 @@ function renderBadges() {
 
   grid.innerHTML = BADGES.map((b) => `
     <div class="badge-card${b.locked ? " is-locked" : ""}">
-      <div class="badge-icon">${b.image ? `<img src="${b.image}" alt="${b.name} badge">` : BADGE_ICON}</div>
+      <div class="badge-icon">${BADGE_ICON}</div>
       <h4>${b.name}</h4>
       <span class="badge-points">${b.points.toLocaleString()} pts</span>
     </div>
