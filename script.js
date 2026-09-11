@@ -10,7 +10,7 @@ const PROJECTS = [
     flow: ["Patient", "Doctor", "Department", "Appointment", "Reports"],
     tech: ["Custom Objects", "Relationships", "Profiles & Permissions", "Field-Level Security"],
     techMore: 4,
-    link: "#"
+    link: "https://docs.google.com/document/d/10MVP8-Vf06nAZ8-2YEPaiS5DtYbPgVnQ_U2CZKxxLsk/edit?usp=drivesdk"
   },
   {
     accent: "#10b981",
